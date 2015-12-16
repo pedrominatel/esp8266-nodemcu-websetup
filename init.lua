@@ -1,4 +1,4 @@
---Developed by Pedro Minatel - 2015-12-13
+--Pedro Minatel - 2015-12-13
 print("Starting...")
 
 if pcall(function ()
@@ -10,10 +10,7 @@ end) then
    wifi.setmode(wifi.STATION)
    wifi.sta.config(ssid,password)
    wifi.sta.connect()
-
-
    timeout = 0;
-
    tmr.alarm(1, 1000, 1, function()
       if wifi.sta.getip() == nil then
          print("IP unavaiable, waiting... " .. timeout)
