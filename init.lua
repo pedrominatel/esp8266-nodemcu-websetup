@@ -26,5 +26,5 @@ end) then
    end)
 else
    print("Enter configuration mode")
-   dofile("run_config.lua")
+   dofile("wifi_setup.lua")
 end
