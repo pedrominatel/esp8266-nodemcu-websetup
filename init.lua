@@ -22,6 +22,7 @@ end) then
       else
          tmr.stop(1)
          print("Connected, IP is "..wifi.sta.getip())
+        --do your code here
       end
    end)
 else
