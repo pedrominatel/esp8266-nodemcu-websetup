@@ -59,7 +59,7 @@ srv = nil
               node.restart()
            end
    
-           buf = "<html><body>"
+           buf = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html><body>"
            buf = buf .. "<h3>Configure WiFi</h3><br>"
            buf = buf .. "<form method='get' action='http://" .. wifi.ap.getip() .."'>"
            buf = buf .. "Available APs:<br>"
